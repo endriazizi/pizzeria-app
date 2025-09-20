@@ -1,0 +1,21 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
