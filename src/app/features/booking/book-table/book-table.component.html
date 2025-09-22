@@ -1,0 +1,114 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Prenota Tavolo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <p class="ion-text-wrap ion-color-medium">
+    Here's a small text description for the content. Nothing more, nothing less.
+  </p>
+</ion-content> -->
+<!-- 
+<ion-content class="page-content">
+  <div class="page-header">
+    <ion-icon name="calendar-outline"></ion-icon>
+    <h1>Prenota un Tavolo</h1>
+  </div>
+
+  <ion-card class="info-card">
+    <ion-card-content>
+      Compila i campi per prenotare il tuo tavolo.
+    </ion-card-content>
+  </ion-card>
+
+  <form class="form-card">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Numero Persone</ion-label>
+      <ion-input type="number" min="1" max="20"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Data</ion-label>
+      <ion-datetime presentation="date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Ora</ion-label>
+      <ion-datetime presentation="time"></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" class="submit-btn">
+      Prenota Ora
+    </ion-button>
+  </form>
+</ion-content> -->
+
+<!-- <app-navbar></app-navbar>
+<ion-content class="ion-padding">
+  <h2>Prenota un tavolo</h2>
+  <p>Modulo di prenotazione semplice e veloce.</p>
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Prenota Tavolo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Prenotazione Tavolo</h2>
+  <p>Compila i dati per prenotare il tuo tavolo.</p>
+
+  <ion-list>
+    <!-- Nome -->
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" placeholder="Inserisci il tuo nome"></ion-input>
+    </ion-item>
+
+    <!-- Numero di persone -->
+    <ion-item>
+      <ion-label position="floating">Persone</ion-label>
+      <ion-input type="number" placeholder="Numero di persone"></ion-input>
+    </ion-item>
+
+    <!-- Data -->
+    <ion-item>
+      <ion-label position="floating">Data</ion-label>
+      <ion-datetime
+        display-format="DD/MM/YYYY"
+        placeholder="Seleziona la data"
+      ></ion-datetime>
+    </ion-item>
+
+    <!-- Orario -->
+    <ion-item>
+      <ion-label position="floating">Orario</ion-label>
+      <ion-datetime
+        display-format="HH:mm"
+        picker-format="HH:mm"
+        placeholder="Seleziona l'orario"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="primary" class="ion-margin-top">
+    Prenota Ora
+  </ion-button>
+</ion-content>

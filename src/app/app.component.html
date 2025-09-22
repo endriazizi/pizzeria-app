@@ -1,3 +1,58 @@
+<!-- <ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/about">About Us</ion-item>
+        <ion-item routerLink="/fidelity">Fidelity</ion-item>
+        <ion-item routerLink="/booking">Prenota Tavolo</ion-item>
+        <ion-item routerLink="/order/lunch">Ordina Pranzo</ion-item>
+        <ion-item routerLink="/order/dinner">Ordina Cena</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
+</ion-app> -->
+
+<!-- <ion-app>
+
+  <ion-content>
+    Qui va il contenuto del navbar
+
+    Qui verranno renderizzate le route figlie
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-content>
+</ion-app> -->
+
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Navbar sempre fisso in alto -->
+  <app-navbar></app-navbar>
+
+  <!-- Contenuto principale -->
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+  <!-- Tabs in basso (opzionali) -->
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" routerLink="/">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="prenota" routerLink="/prenota-tavolo">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Prenota</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="ordinazioni" routerLink="/ordinazioni">
+        <ion-icon name="cart"></ion-icon>
+        <ion-label>Ordina</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-app>

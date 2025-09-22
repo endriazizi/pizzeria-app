@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pizzeria</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="true"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="end" contentId="main">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/" routerLinkActive="selected">
+        <ion-icon slot="start" name="home"></ion-icon>
+        Home
+      </ion-item>
+      <ion-item routerLink="/prenota-tavolo" routerLinkActive="selected">
+        <ion-icon slot="start" name="calendar"></ion-icon>
+        Prenota
+      </ion-item>
+      <ion-item routerLink="/ordinazioni" routerLinkActive="selected">
+        <ion-icon slot="start" name="cart"></ion-icon>
+        Ordina
+      </ion-item>
+      <ion-item routerLink="/login" routerLinkActive="selected">
+        <ion-icon slot="start" name="log-in"></ion-icon>
+        Login
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
